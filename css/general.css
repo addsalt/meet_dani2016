@@ -1,0 +1,142 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "usual";
+    font-size: 100%;
+    line-height: 1.4;
+    color: #2e2e2c;
+    background-color: grey;
+}
+
+::selection {
+    background-color: #2e2e2c;
+    color: #ffffff;
+}
+
+a {
+    color: #2e2e2c;
+}
+
+p~p {
+    margin-top: 0.6em;
+}
+
+.flex-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: .625em;
+}
+
+header p {
+    font-size: .825em;
+    margin-top: 0.825em;
+}
+
+header .flex-img {
+    max-width: 135px;
+    margin-top: 2rem;
+}
+
+main {
+    margin: 2px;
+    width: 100%;
+    overflow: auto;
+    display: block;
+}
+
+#work {
+    margin: 0 auto;
+    clear: both;
+}
+
+#work .flex-img {
+    padding: 4px;
+}
+
+#about {
+    clear: both;
+    padding: 4rem 2rem;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    letter-spacing: -0.015em;
+}
+
+#about p~p {
+    color: #b2b2b2;
+    font-weight: 300;
+    font-size: .975em;
+    line-height: 1.55;
+    margin-top: 0.95em;
+    letter-spacing: 0.015em;
+}
+
+@media only screen and (min-width: 38em) {
+    #work .flex-img {
+        float: left;
+        width: 50%;
+    }
+    
+    #work .large {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    #work .flex-img {
+        width: 33.33333%;
+    }
+    
+    #work .large {
+        width: 66.66666%;
+    }
+    
+}
+
+@media only screen and (min-width: 85em) {
+    #work {
+        float: right;
+        width: 75%
+    }
+    
+    header, #about {
+        float: left;
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        text-align: left;
+    }
+    
+    #about {
+        top: 2rem;
+        bottom: 15rem;
+        width: 22.5%;
+        padding: 0 2rem 0 0;
+    }
+    
+    header .flex-img {
+        margin-left: 0rem;
+    }
+}
+
